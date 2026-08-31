@@ -1,0 +1,13 @@
+src/
+│
+├── domain/            ← What Turfr IS
+│
+├── application/       ← What Turfr DOES
+│
+├── http/              ← How HTTP talks to Turfr
+│
+├── infrastructure/    ← How Turfr talks to external systems
+│
+├── server.ts          ← Wires everything together
+│
+└── main.ts            ← Starts the process

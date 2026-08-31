@@ -1,0 +1,13 @@
+                    Player
+                       │
+                ┌──────┴──────┐
+                │             │
+             stable ID     attributes
+                │          name + phone
+                │             │
+                │             ▼
+                │       identity resolution
+                │             │
+                └─────────────┘
+                       ↓
+                 participation

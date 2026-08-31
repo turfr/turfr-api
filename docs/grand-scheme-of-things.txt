@@ -1,0 +1,17 @@
+                    ┌──────────────┐
+                    │  turfr-api   │
+                    │              │
+                    │ domain       │
+                    │ application  │
+                    │ persistence  │
+                    └──────┬───────┘
+                           │
+                        Supabase
+                           │
+              ┌────────────┼────────────┐
+              │            │            │
+              ▼            ▼            ▼
+          turfr-list   turfr-dash   turfr-cli
+           players      community    operator
+
+
