@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/players",
-      "destination": "/api"
-    }
-  ]
-}

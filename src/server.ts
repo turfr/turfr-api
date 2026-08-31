@@ -34,3 +34,5 @@ export function createRequestHandler() {
 export function createApp() {
     return createServer(createRequestHandler());
 }
+
+export default createApp();
