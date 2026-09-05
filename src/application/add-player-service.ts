@@ -1,7 +1,7 @@
 import type { Player } from "../domain/player.js";
 import type { AddPlayer, AddPlayerInput } from "./add-player.js";
 import type { PlayerRepository } from "../domain/player-repository.js";
-import { normalizePlayerName } from "../domain/player-normalization.js";
+import { normalizePlayerName, normalizePlayerPhone } from "../domain/player-normalization.js";
 import { validatePlayerName } from "../domain/player-validation.js";
 
 export function addPlayer(
@@ -21,7 +21,7 @@ export function addPlayer(
         };
 
         if (input.phone !== undefined) {
-            const phone = input.phone.trim();
+            const phone = normalizePlayerPhone(input.phone);
 
             if (phone.length > 0) {
                 normalizedInput.phone = phone;

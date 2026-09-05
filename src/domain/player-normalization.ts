@@ -5,5 +5,16 @@ export function normalizePlayerName(name: string): string {
         return "";
     }
 
-    return trimmed.charAt(0).toUpperCase() + trimmed.slice(1).toLowerCase();
+    return trimmed
+        .split(/\s+/)
+        .map(
+            (word) =>
+                word.charAt(0).toUpperCase() +
+                word.slice(1).toLowerCase(),
+        )
+        .join(" ");
+}
+
+export function normalizePlayerPhone(phone: string): string {
+    return phone.trim().replace(/[\s()-]/g, "");
 }
